@@ -1,0 +1,79 @@
+version: "3.1"
+
+stories:
+
+- story: fetching department courses 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fetch_courses
+    entities:
+     - dept_name: "Computer Science"
+  - action: action_list_courses
+  - action: utter_more_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: fetching department courses 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fetch_courses
+    entities:
+     - dept_name: "Computer Science"
+  - action: action_list_courses
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+- story: faculty path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faculty
+  - action: action_faculty_info
+  - action: utter_more_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: faculty path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faculty
+  - action: action_faculty_info
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+- story: course and faculty path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fetch_courses
+    entities:
+     - dept_name: "Computer Science"
+  - action: action_list_courses
+  - action: utter_more_help
+  - intent: faculty
+  - action: action_faculty_info
+  - action: utter_more_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: course and faculty path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fetch_courses
+    entities:
+     - dept_name: "Computer Science"
+  - action: action_list_courses
+  - action: utter_more_help
+  - intent: faculty
+  - action: action_faculty_info
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+  
+

@@ -1,0 +1,65 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - fetch_courses
+  - faculty
+  - faculty_contact
+ 
+
+entities:
+ - faculty_name
+ - course_name
+ - dept_name
+
+slots:
+  course_name:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: custom
+  dept_name:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: custom
+  faculty_name:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: custom
+
+responses:
+  utter_greet:
+  - text: "Hey! How can I help you?"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_contact:
+  - text: "The contact of {faculty_name} is {contact}"
+
+  utter_more_help:
+  - text: "What else can I help you with?"
+
+
+actions:
+  - action_list_courses
+  - action_faculty_info
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

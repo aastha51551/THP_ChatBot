@@ -1,0 +1,37 @@
+version: "3.1"
+nlu:
+- intent: fetch_courses
+  examples: |
+    - Hi, can you tell me about the courses offered in the {dept_name} department?
+- intent: faculty_contact
+  examples: |
+    - Can you share the contact of faculty of {course_name}?
+- intent: faculty
+  examples: |
+    - Who are the faculties of {dept_name} department?
+- intent: bot_challenge
+  examples: |
+    - are you a human?
+- intent: affirm
+  examples: |
+    - correct
+- intent: deny
+  examples: |
+    - no way
+- intent: goodbye
+  examples: |
+    - bye bye
+- intent: greet
+  examples: |
+    - good evening
+    - let's go
+    - good morning
+- intent: mood_great
+  examples: |
+    - extremely good
+    - perfect
+    - great
+- intent: mood_unhappy
+  examples: |
+    - unhappy
+    - I am disappointed

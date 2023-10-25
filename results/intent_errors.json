@@ -1,0 +1,58 @@
+[
+  {
+    "text": "Hi, can you tell me about {dept_name} courses?",
+    "intent": "fetch_courses",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.4780305325984955
+    }
+  },
+  {
+    "text": "Hi, can you tell me about the courses offered in the {dept_name} department?",
+    "intent": "fetch_courses",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.37132886052131653
+    }
+  },
+  {
+    "text": "Can you tell me who is the faculty of {course_name}?",
+    "intent": "faculty",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9648539423942566
+    }
+  },
+  {
+    "text": "Who is the faculty for this course?",
+    "intent": "faculty",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9973095655441284
+    }
+  },
+  {
+    "text": "Who are the faculties of {dept_name} department?",
+    "intent": "faculty",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.7530133724212646
+    }
+  },
+  {
+    "text": "Can you share the contact of {faculty_name}?",
+    "intent": "faculty_contact",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.7222145199775696
+    }
+  },
+  {
+    "text": "Can you share the contact of faculty of {course_name}?",
+    "intent": "faculty_contact",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9843877553939819
+    }
+  }
+]

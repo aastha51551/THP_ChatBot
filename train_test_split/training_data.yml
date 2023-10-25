@@ -1,0 +1,82 @@
+version: "3.1"
+nlu:
+- intent: fetch_courses
+  examples: |
+    - Hi, can you tell me about {dept_name} courses?
+- intent: faculty_contact
+  examples: |
+    - Can you share the contact of {faculty_name}?
+- intent: faculty
+  examples: |
+    - Can you tell me who is the faculty of {course_name}?
+    - Who is the faculty for this course?
+- intent: bot_challenge
+  examples: |
+    - am I talking to a bot?
+    - are you a bot?
+    - am I talking to a human?
+- intent: affirm
+  examples: |
+    - y
+    - that sounds good
+    - indeed
+    - of course
+    - yes
+- intent: deny
+  examples: |
+    - I don't think so
+    - never
+    - no
+    - don't like that
+    - n
+    - not really
+- intent: goodbye
+  examples: |
+    - cu
+    - goodbye
+    - cee you later
+    - good night
+    - see you around
+    - bye
+    - good by
+    - have a nice day
+    - see you later
+- intent: greet
+  examples: |
+    - hey there
+    - moin
+    - hey
+    - goodmorning
+    - good afternoon
+    - hello
+    - hello there
+    - goodevening
+    - hi
+    - hey dude
+- intent: mood_great
+  examples: |
+    - I am feeling very good
+    - wonderful
+    - I am going to save the world
+    - so good
+    - I am great
+    - so so perfect
+    - I am amazing
+    - so perfect
+    - super stoked
+    - amazing
+    - feeling like a king
+- intent: mood_unhappy
+  examples: |
+    - so sad
+    - I don't feel very well
+    - not very good
+    - I am sad
+    - very sad
+    - super sad
+    - I'm so sad
+    - extremly sad
+    - so saad
+    - sad
+    - my day was horrible
+    - not good
