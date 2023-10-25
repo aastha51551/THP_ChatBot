@@ -50,7 +50,9 @@ class ActionListCourses(Action):
             "Biosciences":["BB101","BB400","BB401","BB402","BB403","BB404","BB405","BB406","BB407","BB408"],
             "Computer Sciences":["CS101","CS103","CS104","CS105","CS152","CS154","CS207","CS208","CS210","CS213"],
             "Civil":["CE102","CE103","CE201","CE203","CE204","CE205","CE206","CE207","CE209","CE211"],
-            "Chemical":["CL102","CL152","CL202","CL203","CL205","CL207","CL231","CL232","CL242","CL244"]
+            "Chemical":["CL102","CL152","CL202","CL203","CL205","CL207","CL231","CL232","CL242","CL244"],
+            "Energy": ["EN102","EN110","EN203","EN204","EN205","EN207","EN209","EN211","EN212","EN213"],
+            "Metallurgy":["MM214","MM104","MM152","MM201","MM202","MM203","MM204","MM205","MM206","MM207"]
         }
         
         # Fetch courses based on the provided department
